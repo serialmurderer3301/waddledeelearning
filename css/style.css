@@ -1,0 +1,200 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.for-pc { display:block; }
+.for-sp { display:none; }
+
+@media only screen and (max-width : 767px){
+  .for-pc { display:none; }
+  .for-sp { display:block; }
+}
+
+.images {
+  position:absolute;
+}
+
+.faq-answer {
+  display:none;
+}
+
+.header-fixedNav {
+  position: fixed;
+  -webkit-transition: -webkit-transform .6s ease;
+  transition: -webkit-transform .6s ease;
+  transition: transform .6s ease;
+  transition: transform .6s ease, -webkit-transform .6s ease;
+  will-change: transform
+}
+
+@media print, screen and (min-width: 767px) {
+  .header-fixedNav {
+      bottom:3.2rem;
+      right: 3.2rem
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-fixedNav {
+      bottom:1.6rem;
+      right: 1.6rem
+  }
+}
+
+.header-fixedNav__btn {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  background-color: #5d4c45;
+  border: 1px solid #5d4c45;
+  border-radius: 50%;
+  color: #ffffff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1;
+  position: relative;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  -webkit-transition-property: background-color,color;
+  transition-property: background-color,color
+}
+
+@media print, screen and (min-width: 767px) {
+  .header-fixedNav__btn {
+      gap:1rem;
+      padding-top: 1rem;
+      width: 16rem
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-fixedNav__btn {
+      gap:.8rem;
+      padding-top: 1rem;
+      width: 10rem
+  }
+}
+
+@media print, screen and (min-width: 767px) {
+  .header-fixedNav__btn:hover {
+      background-color:#ffffff;
+      color: #5d4c45
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .header-fixedNav__btn:hover {
+      background-color:#ffffff;
+      color: #5d4c45
+  }
+}
+
+.header-fixedNav__btn .ja {
+  display: inline-block;
+  line-height: 1
+}
+
+@media print, screen and (min-width: 767px) {
+  .header-fixedNav__btn .ja {
+      font-size:1.4rem
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-fixedNav__btn .ja {
+      font-size:1.1rem
+  }
+}
+
+.header-fixedNav__btn:after {
+  aspect-ratio: 134 / 131;
+  background: url("../../common/imgs/illust-tomato-01@2x.png") no-repeat center/cover;
+  content: '';
+  display: block
+}
+
+@media print, screen and (min-width: 767px) {
+  .header-fixedNav__btn:after {
+      width:7.2rem
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-fixedNav__btn:after {
+      width:3.4rem
+  }
+}
+
+.header-fixedNav.is-hidden {
+  -webkit-transform: translate(0, 150%);
+  transform: translate(0, 150%)
+}
+
+.header-fixedNav.is-hidden.is-mod {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0)
+}
